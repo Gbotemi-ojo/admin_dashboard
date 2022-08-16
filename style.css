@@ -26,51 +26,51 @@ body{
 .dashboard > div{
     margin-left: 25px;
 }
-.firstcolumn{
+.dashboard >:first-child{
     grid-row: 1/2;
     font-size: 25px;
     margin-top: 10px;
 }
-.firstcolumn > span{
+.dashboard >:first-child > span{
     margin-left: 12px;
 }
-.firstcolumn > img{
+.dashboard >:first-child > img{
     width: 35px;
     height: 35px; 
 }
-.secondcolumn{
+.dashboard > :nth-child(2){
     grid-row: 2/5;
     font-size: 22px;
 }
-.secondcolumn > div{
+.dashboard > :nth-child(2) > div{
     margin-top: 20px;
 }
-.secondcolumn > div > img{
+.dashboard > :nth-child(2) > div > img{
     width: 20px;
     height: 20px;
 }
-.secondcolumn > div > span{
+.dashboard > :nth-child(2) > div > span{
     margin-left: 12px;
 }
-.thirdcolumn{
+.dashboard > :nth-child(3){
     grid-row: 5/8;
     font-size: 22px;
     margin-top: 55px;
 }
-.thirdcolumn > div{
+.dashboard > :nth-child(3) > div{
     margin-top: 20px;
 }
-.thirdcolumn > div > img {
+.dashboard > :nth-child(3) > div > img{
     width: 20px;
     height: 20px;
 }
-.thirdcolumn > div > span{
+.dashboard > :nth-child(3) > div > span{
     margin-left: 12px;
 }
 .headercontainer{
     grid-area: 1/2/2/3;
 }
-.project{
+.main{
     grid-area: 2/2/3/3;
     background-color: rgba(226,232,240,255);
     display: grid;
@@ -95,14 +95,10 @@ body{
     border-left: 10px solid gold;
     background-color: white;
     margin: 10px;
-    margin-top: 15px;
-    height: 200px;
+    margin-top: 20px;
+    height: 230px;
     width: 450px;
     border-radius: 10px;
-}
-.projectcard{
-    width: 90%;
-    height: 90%;
 }
 .projectcard >:nth-child(1)>span{
     display: block;
@@ -110,7 +106,8 @@ body{
     font-size: 18px;
 }
 .projectcard > :nth-child(2){
-    margin-left: 250px;
+    margin-left: 330px;
+    margin-top: 80px;
 }
 .projectcard > div{
     margin-top: 20px;
@@ -118,8 +115,9 @@ body{
 }
 .rightside{
     display: grid;
-    grid-template-rows:55% 55%;
+    grid-template-rows:60% 60%;
     grid-template-columns: 1fr;
+    margin-bottom: 70px;
 }
 .header{
     display: grid;
@@ -135,7 +133,7 @@ body{
 .announcement > span{
     width: 100%;
     display: block;
-    margin-top: 20px;
+    margin-top: 22px;
     margin-left: 35px;
     font-weight: 600;
     font-size: 18px;
@@ -143,7 +141,7 @@ body{
 }
 .trending{
     background-color: white;
-    margin-top: 25px;
+    margin-top: 35px;
     width: 80%;
     margin-left: 42px;
     height: fit-content;
@@ -163,7 +161,7 @@ body{
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    background-color: red;
+    background-color: rgb(143, 143, 89);
 }
 .card2 > div > div > span{
     display: block;
@@ -269,9 +267,9 @@ button{
     background-color: rgb(70, 70, 32);
     border-radius: 50%;
 }
-.pointa{
-    margin-top: 28px;
+.leftside > span{
+    margin-top: 20px;
     margin-left: 10px;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 700; 
 }
